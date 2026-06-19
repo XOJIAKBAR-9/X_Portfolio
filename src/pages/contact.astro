@@ -15,10 +15,15 @@ import { Icon } from 'astro-icon/components'
   <section class="container">
     <div class="grid grid-cols-1 gap-32 md:grid-cols-2">
       <div class="space-content">
-        <form name="contact" action="https://formsubmit.co/xojiakbaar9@gmail.com" method="POST" class="flex flex-col gap-6">
-          <input type="hidden" name="_next" value="https://xojiakbar-portfolio.jprq.live/thank-you" />
+        <form
+          name="contact"
+          action="https://formsubmit.co/xojiakbaar9@gmail.com"
+          method="POST"
+          class="flex flex-col gap-6"
+        >
+          <input type="hidden" name="_next" value="https://x-portfolio9.netlify.app/thank-you" />
           <input type="hidden" name="_subject" value="New message from your portfolio!" />
-          
+
           <Input
             name="firstname"
             label="Your name"
@@ -43,9 +48,7 @@ import { Icon } from 'astro-icon/components'
           collaborate, or just want to say hi — feel free to reach out!
         </p>
 
-        <p class="text-lg font-bold">
-          🟢 Currently open to freelance projects and job opportunities.
-        </p>
+        <p class="text-lg font-bold">🟢 Currently open to freelance projects and job opportunities.</p>
 
         <div class="gap-2xs flex items-center">
           <Icon aria-hidden="true" name="lucide:mail" size={20} class="flex-shrink-0" />
@@ -81,19 +84,36 @@ import { Icon } from 'astro-icon/components'
 
         <ul class="flex flex-wrap gap-2">
           <li>
-            <Link href="https://github.com/XOJIAKBAR-9" isButton isExternal hideIcon animateOnHover animationType="boop">
+            <Link
+              href="https://github.com/XOJIAKBAR-9"
+              isButton
+              isExternal
+              hideIcon
+              animateOnHover
+              animationType="boop"
+            >
               <Icon aria-hidden="true" name="lucide:github" size={32} />
               <span class="sr-only">Go to my GitHub profile, opens in a new tab</span>
             </Link>
           </li>
           <li>
-            <Link href="https://www.linkedin.com/in/xojiakbar-akramov-9508a1332" isButton isExternal hideIcon animateOnHover animationType="boop">
+            <Link
+              href="https://www.linkedin.com/in/xojiakbar-akramov-9508a1332"
+              isButton
+              isExternal
+              hideIcon
+              animateOnHover
+              animationType="boop"
+            >
               <Icon aria-hidden="true" name="lucide:linkedin" size={32} />
               <span class="sr-only">Go to my LinkedIn profile, opens in a new tab</span>
             </Link>
           </li>
           <li>
-            <a href="mailto:xojiakbaar9@gmail.com" class="flex items-center justify-center p-2 bg-primary text-white rounded hover:opacity-80 transition-opacity">
+            <a
+              href="mailto:xojiakbaar9@gmail.com"
+              class="bg-primary flex items-center justify-center rounded p-2 text-white transition-opacity hover:opacity-80"
+            >
               <Icon aria-hidden="true" name="lucide:mail" size={32} />
               <span class="sr-only">Send me an email</span>
             </a>
@@ -103,4 +123,3 @@ import { Icon } from 'astro-icon/components'
     </div>
   </section>
 </DefaultLayout>
-
