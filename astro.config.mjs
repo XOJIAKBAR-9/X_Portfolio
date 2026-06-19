@@ -9,6 +9,9 @@ import { enhanceConfigForWorkspace } from './scripts/workspace-config.js'
 
 // Vite configuration with path aliases and SCSS settings
 const viteConfig = {
+  server: {
+    allowedHosts: ['xojiakbar-portfolio.jprq.live'],
+  },
   css: {
     preprocessorOptions: {
       scss: {
