@@ -15,7 +15,10 @@ import { Icon } from 'astro-icon/components'
   <section class="container">
     <div class="grid grid-cols-1 gap-32 md:grid-cols-2">
       <div class="space-content">
-        <Form name="contact" action="/thank-you" method="post">
+        <form name="contact" action="https://formsubmit.co/xojiakbaar9@gmail.com" method="POST" class="flex flex-col gap-6">
+          <input type="hidden" name="_next" value="https://xojiakbar-portfolio.jprq.live/thank-you" />
+          <input type="hidden" name="_subject" value="New message from your portfolio!" />
+          
           <Input
             name="firstname"
             label="Your name"
@@ -31,7 +34,7 @@ import { Icon } from 'astro-icon/components'
           <Textarea name="message" label="Message" required />
 
           <Button htmlType="submit" type="primary">Send Message</Button>
-        </Form>
+        </form>
       </div>
       <div class="space-content">
         <Heading level="h3">Let's connect</Heading>
@@ -48,7 +51,7 @@ import { Icon } from 'astro-icon/components'
           <Icon aria-hidden="true" name="lucide:mail" size={20} class="flex-shrink-0" />
           <p>
             <span class="font-bold">Email:</span>
-            <Link href="mailto:xojiakbaar9@gmail.com">xojiakbaar9@gmail.com</Link>
+            <a href="mailto:xojiakbaar9@gmail.com" class="hover:underline">xojiakbaar9@gmail.com</a>
           </p>
         </div>
 
@@ -90,10 +93,10 @@ import { Icon } from 'astro-icon/components'
             </Link>
           </li>
           <li>
-            <Link href="mailto:xojiakbaar9@gmail.com" isButton hideIcon animateOnHover animationType="boop">
+            <a href="mailto:xojiakbaar9@gmail.com" class="flex items-center justify-center p-2 bg-primary text-white rounded hover:opacity-80 transition-opacity">
               <Icon aria-hidden="true" name="lucide:mail" size={32} />
               <span class="sr-only">Send me an email</span>
-            </Link>
+            </a>
           </li>
         </ul>
       </div>
