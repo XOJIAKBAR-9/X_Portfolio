@@ -9,13 +9,13 @@ import { Icon } from 'astro-icon/components'
   <PageHeader title="Splendid!" subtitle="The form was successfully validated." bgType="gradient" />
   <section class="container my-16">
     <div class="space-content">
-      <Notification type="info">
-        <Icon aria-hidden="true" name="lucide:info" size={24} />
-        <p>This was a test of the form validation system, no email was sent 😉.</p>
+      <Notification type="success">
+        <Icon aria-hidden="true" name="lucide:check-circle" size={24} />
+        <p>Your message has been sent successfully. I'll get back to you as soon as possible!</p>
       </Notification>
-      <Link href="/contact" isButton type="primary" animateOnHover animation="boop" pulse>
-        <Icon aria-hidden="true" name="lucide:mail" size={24} />
-        Send another message
+      <Link href="/" isButton type="primary" animateOnHover animation="boop" pulse>
+        <Icon aria-hidden="true" name="lucide:home" size={24} />
+        Return to Homepage
       </Link>
     </div>
   </section>
