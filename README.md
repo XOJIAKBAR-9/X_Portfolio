@@ -18,17 +18,20 @@ Welcome to the source code for my personal portfolio! I am a full-stack develope
 To run this project locally, follow these steps:
 
 1. **Clone the repository:**
+
    ```bash
    git clone https://github.com/XOJIAKBAR-9/X_Portfolio.git
    cd X_Portfolio
    ```
 
 2. **Install dependencies:**
+
    ```bash
    npm install
    ```
 
 3. **Start the development server:**
+
    ```bash
    npm run dev
    ```
@@ -55,4 +58,4 @@ To run this project locally, follow these steps:
 
 ---
 
-*This portfolio was adapted from the [Accessible Astro Starter](https://github.com/incluud/accessible-astro-starter) built by Mark Teekman / Incluud.*
+_This portfolio was adapted from the [Accessible Astro Starter](https://github.com/incluud/accessible-astro-starter) built by Mark Teekman / Incluud._
