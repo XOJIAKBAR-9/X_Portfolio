@@ -2,7 +2,7 @@
 
 Welcome to the source code for my personal portfolio! I am a full-stack developer based in Uzbekistan, specializing in building web applications with Django, JavaScript, Next.js, and implementing AI-powered features using RAG and vector databases.
 
-🌐 **Live Website**: [You can view my portfolio here.](#) (Update with deployed URL)
+🌐 **Live Website**: [https://xojiakbar-portfolio.jprq.live/](#)
 
 ## Features
 
