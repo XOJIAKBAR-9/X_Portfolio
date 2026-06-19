@@ -1,0 +1,103 @@
+---
+import DefaultLayout from '@layouts/DefaultLayout.astro'
+import PageHeader from '@components/PageHeader.astro'
+import { Form, Input, Button, Textarea, Heading, Link } from 'accessible-astro-components'
+import { Icon } from 'astro-icon/components'
+---
+
+<DefaultLayout title="Contact">
+  <PageHeader title="Contact" subtitle="Have a project in mind? Let's talk!" bgType="gradient" />
+  <section class="my-16">
+    <div class="container">
+      <Heading level="h2">Get in Touch</Heading>
+    </div>
+  </section>
+  <section class="container">
+    <div class="grid grid-cols-1 gap-32 md:grid-cols-2">
+      <div class="space-content">
+        <Form name="contact" action="/thank-you" method="post">
+          <Input
+            name="firstname"
+            label="Your name"
+            required
+            data-validation="Please enter your name"
+            autocomplete="given-name"
+          />
+
+          <Input name="email" label="Email address" type="email" required autocomplete="email" />
+
+          <Input name="subject" label="Subject" required />
+
+          <Textarea name="message" label="Message" required />
+
+          <Button htmlType="submit" type="primary">Send Message</Button>
+        </Form>
+      </div>
+      <div class="space-content">
+        <Heading level="h3">Let's connect</Heading>
+        <p class="text-lg">
+          I'm always interested in hearing about new projects and opportunities. Whether you have a question, want to
+          collaborate, or just want to say hi — feel free to reach out!
+        </p>
+
+        <p class="text-lg font-bold">
+          🟢 Currently open to freelance projects and job opportunities.
+        </p>
+
+        <div class="gap-2xs flex items-center">
+          <Icon aria-hidden="true" name="lucide:mail" size={20} class="flex-shrink-0" />
+          <p>
+            <span class="font-bold">Email:</span>
+            <Link href="mailto:xojiakbaar9@gmail.com">xojiakbaar9@gmail.com</Link>
+          </p>
+        </div>
+
+        <div class="gap-2xs flex items-center">
+          <Icon aria-hidden="true" name="lucide:phone" size={20} class="flex-shrink-0" />
+          <p>
+            <span class="font-bold">Phone:</span>
+            <Link href="tel:+998903000719">+998 90 300 07 19</Link>
+          </p>
+        </div>
+
+        <div class="gap-2xs flex items-center">
+          <Icon aria-hidden="true" name="lucide:linkedin" size={20} class="flex-shrink-0" />
+          <p>
+            <span class="font-bold">LinkedIn:</span>
+            <Link isExternal href="https://www.linkedin.com/in/xojiakbar-akramov-9508a1332">Xojiakbar Akramov</Link>
+          </p>
+        </div>
+
+        <div class="gap-2xs flex items-center">
+          <Icon aria-hidden="true" name="lucide:github" size={20} class="flex-shrink-0" />
+          <p>
+            <span class="font-bold">GitHub:</span>
+            <Link isExternal href="https://github.com/XOJIAKBAR-9">XOJIAKBAR-9</Link>
+          </p>
+        </div>
+
+        <ul class="flex flex-wrap gap-2">
+          <li>
+            <Link href="https://github.com/XOJIAKBAR-9" isButton isExternal hideIcon animateOnHover animationType="boop">
+              <Icon aria-hidden="true" name="lucide:github" size={32} />
+              <span class="sr-only">Go to my GitHub profile, opens in a new tab</span>
+            </Link>
+          </li>
+          <li>
+            <Link href="https://www.linkedin.com/in/xojiakbar-akramov-9508a1332" isButton isExternal hideIcon animateOnHover animationType="boop">
+              <Icon aria-hidden="true" name="lucide:linkedin" size={32} />
+              <span class="sr-only">Go to my LinkedIn profile, opens in a new tab</span>
+            </Link>
+          </li>
+          <li>
+            <Link href="mailto:xojiakbaar9@gmail.com" isButton hideIcon animateOnHover animationType="boop">
+              <Icon aria-hidden="true" name="lucide:mail" size={32} />
+              <span class="sr-only">Send me an email</span>
+            </Link>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</DefaultLayout>
+

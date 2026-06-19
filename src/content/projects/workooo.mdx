@@ -1,0 +1,41 @@
+---
+title: Workooo
+author: Xojiakbar Akramov
+description: A platform for finding daily and short-term jobs in Uzbekistan, connecting workers and employers on a single marketplace.
+tags: ['Django', 'Python', 'PostgreSQL']
+---
+
+## Project Overview
+
+Across every region of Uzbekistan, there are many daily and temporary job opportunities — but no centralized platform to connect workers and employers. Workooo solves this problem by bringing both sides together on a single, easy-to-use platform.
+
+Inspired by the jobs section of Korea's Carrot (당근마켓) app, Workooo is adapted specifically for the Uzbek market and the unique needs of local workers and employers.
+
+import BreakoutImage from '@components/BreakoutImage.astro'
+
+<BreakoutImage src="/projects/project-image-1.png" decorative={true} />
+
+## How It Works
+
+**For Workers:**
+- Browse job listings filtered by region
+- Submit applications directly through the platform
+- Communicate with employers through built-in chat once accepted
+
+**For Employers:**
+- Post daily or short-term job listings
+- Review incoming applications
+- Accept or reject candidates
+- Rate workers after job completion
+
+## Technical Approach
+
+The platform is built with Django on the backend, using PostgreSQL for data storage. The architecture handles real-time chat between workers and employers, a rating system for building trust, and regional filtering to keep job listings relevant.
+
+Key technical decisions included building a robust application workflow (post → apply → accept/reject → rate) and implementing location-based filtering to help users find opportunities in their area.
+
+## What I Learned
+
+Building Workooo taught me a lot about designing systems that handle real user workflows — from managing application states to implementing chat functionality. It also reinforced the importance of thinking about the user experience from both sides of a marketplace.
+
+🌐 **Live Demo:** [workooo.tech](https://workooo.tech)

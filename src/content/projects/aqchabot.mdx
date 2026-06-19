@@ -1,0 +1,33 @@
+---
+title: Aqchabot
+author: Xojiakbar Akramov
+description: A Next.js currency comparison tool that scrapes exchange rates from foreign and Uzbekistan local banks for easy comparison.
+tags: ['Next.js', 'TypeScript', 'Web Scraping']
+---
+
+## Project Overview
+
+Finding the best exchange rates in Uzbekistan means checking multiple banks individually — a tedious and time-consuming process. Aqchabot solves this by aggregating currency exchange rates from both foreign and local Uzbek banks into a single, easy-to-compare page.
+
+import BreakoutImage from '@components/BreakoutImage.astro'
+
+<BreakoutImage src="/projects/project-image-2.png" decorative={true} />
+
+## Technical Approach
+
+The application is built as a complete Next.js website deployed at [aqchabot.uz](https://aqchabot.uz). It uses web scraping to pull live exchange rates from multiple banking sources, then presents them in a clean, sortable interface.
+
+Key technical challenges included:
+- Building reliable scrapers that handle different bank website structures
+- Keeping exchange rate data fresh with efficient update cycles
+- Designing a comparison UI that makes it instantly clear which bank offers the best rate
+
+## Architecture
+
+The scraping layer collects data from multiple bank APIs and websites, normalizes the data into a consistent format, and stores it for quick retrieval. The frontend presents the data with clear visual indicators for the best buying and selling rates.
+
+## What I Learned
+
+This project deepened my understanding of web scraping at scale, data normalization across inconsistent sources, and the importance of building resilient systems that handle source changes gracefully. It also gave me hands-on experience deploying a full Next.js application to production.
+
+🌐 **Live Demo:** [aqchabot.uz](https://aqchabot.uz)

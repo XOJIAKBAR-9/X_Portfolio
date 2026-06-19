@@ -1,0 +1,62 @@
+---
+import DefaultLayout from '@layouts/DefaultLayout.astro'
+import Hero from '@components/Hero.astro'
+import Feature from '@components/Feature.astro'
+import ContentMedia from '@components/ContentMedia.astro'
+import FeaturedProjects from '@components/FeaturedProjects.astro'
+import { Heading, Link } from 'accessible-astro-components'
+import { Icon } from 'astro-icon/components'
+---
+
+<DefaultLayout title="Xojiakbar Akramov — Full-Stack Developer" useTitleTemplate={false}>
+  <Hero />
+  <section class="my-64">
+    <div class="container">
+      <Heading level="h2" class="mb-8">What I Do</Heading>
+      <div class="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3">
+        <Feature icon="lucide:server" title="Backend Development">
+          Building robust server-side applications with Django and Django REST Framework, handling complex business logic
+          and API design.
+        </Feature>
+        <Feature icon="lucide:layout" title="Frontend Development">
+          Creating responsive, interactive user interfaces with JavaScript, TypeScript, and modern frameworks like
+          Next.js.
+        </Feature>
+        <Feature icon="lucide:plug" title="API Development">
+          Designing and building RESTful APIs, integrating third-party services, and ensuring clean data flow between
+          systems.
+        </Feature>
+        <Feature icon="lucide:brain" title="AI & RAG Systems">
+          Implementing AI-powered features using Retrieval-Augmented Generation, vector databases, and intelligent search
+          solutions.
+        </Feature>
+        <Feature icon="lucide:database" title="Database Design">
+          Designing efficient PostgreSQL schemas, writing optimized queries, and managing data integrity across
+          applications.
+        </Feature>
+        <Feature icon="lucide:git-branch" title="DevOps & Tools">
+          Version control with Git, API testing with Postman and Insomnia, and deploying applications to production
+          environments.
+        </Feature>
+      </div>
+    </div>
+  </section>
+  <ContentMedia imgSrc="/accessible-components.webp">
+    <Heading level="h2">Building real-world solutions</Heading>
+    <p class="text-2xl">
+      I enjoy turning ideas into software that solves real problems. From a job marketplace connecting workers and
+      employers across Uzbekistan to a currency comparison tool that scrapes live exchange rates — I focus on building
+      things people actually use.
+    </p>
+  </ContentMedia>
+  <ContentMedia imgSrc="/wcag-compliant.webp" reverseImg={true}>
+    <Heading level="h2">Always learning, always building</Heading>
+    <p class="text-2xl">
+      Whether it's exploring AI and vector databases, picking up a new framework, or diving into game development with
+      Python — I love learning new technologies and applying them to real-world projects. Every project is an opportunity
+      to grow.
+    </p>
+  </ContentMedia>
+  <FeaturedProjects />
+</DefaultLayout>
+

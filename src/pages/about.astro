@@ -1,0 +1,165 @@
+---
+import DefaultLayout from '@layouts/DefaultLayout.astro'
+import PageHeader from '@components/PageHeader.astro'
+import { Heading, Link } from 'accessible-astro-components'
+import { Icon } from 'astro-icon/components'
+---
+
+<DefaultLayout title="About">
+  <PageHeader title="About Me" subtitle="Full-stack developer based in Uzbekistan" bgType="gradient" />
+
+  <!-- Intro -->
+  <section class="my-16">
+    <div class="container">
+      <div class="space-content" style="max-width: 65ch;">
+        <Heading level="h2">Who I Am</Heading>
+        <p class="text-lg">
+          Hi, I'm Xojiakbar. I enjoy turning ideas into software. Whether it's a web application built with JavaScript
+          and Django or an AI-powered project using RAG and vector databases, I love learning new technologies and
+          applying them to real-world problems.
+        </p>
+        <p class="text-lg">
+          I'm currently studying Computer Science at ITpark University and building real-world projects on the side —
+          from job marketplaces to currency comparison tools. I believe the best way to learn is by building, and every
+          project is an opportunity to grow as a developer.
+        </p>
+        <p class="text-lg">
+          When I'm not coding, you'll find me exploring new frameworks, experimenting with AI, or playing around with
+          game development in Python.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tech Stack -->
+  <section class="my-16">
+    <div class="container">
+      <Heading level="h2">Tech Stack</Heading>
+      <div class="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
+        <div class="space-content">
+          <Heading level="h3" size="h5">
+            <span class="gap-2xs flex items-center">
+              <Icon aria-hidden="true" name="lucide:code" size={20} />
+              Languages
+            </span>
+          </Heading>
+          <ul class="flex flex-col gap-2">
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>TypeScript</li>
+            <li>HTML</li>
+            <li>CSS</li>
+          </ul>
+        </div>
+        <div class="space-content">
+          <Heading level="h3" size="h5">
+            <span class="gap-2xs flex items-center">
+              <Icon aria-hidden="true" name="lucide:layers" size={20} />
+              Frameworks
+            </span>
+          </Heading>
+          <ul class="flex flex-col gap-2">
+            <li>Django / DRF</li>
+            <li>Next.js</li>
+            <li>RAG</li>
+          </ul>
+        </div>
+        <div class="space-content">
+          <Heading level="h3" size="h5">
+            <span class="gap-2xs flex items-center">
+              <Icon aria-hidden="true" name="lucide:wrench" size={20} />
+              Tools & DevOps
+            </span>
+          </Heading>
+          <ul class="flex flex-col gap-2">
+            <li>Git / GitHub</li>
+            <li>Postman</li>
+            <li>Insomnia</li>
+            <li>AI / Vector Databases</li>
+          </ul>
+        </div>
+        <div class="space-content">
+          <Heading level="h3" size="h5">
+            <span class="gap-2xs flex items-center">
+              <Icon aria-hidden="true" name="lucide:database" size={20} />
+              Databases
+            </span>
+          </Heading>
+          <ul class="flex flex-col gap-2">
+            <li>PostgreSQL</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Languages Spoken -->
+  <section class="my-16">
+    <div class="container">
+      <Heading level="h2">Languages</Heading>
+      <div class="mt-8 grid grid-cols-2 gap-4 md:grid-cols-4">
+        <div class="space-content">
+          <Heading level="h3" size="h6">Uzbek</Heading>
+          <p>Native</p>
+        </div>
+        <div class="space-content">
+          <Heading level="h3" size="h6">Russian</Heading>
+          <p>C1</p>
+        </div>
+        <div class="space-content">
+          <Heading level="h3" size="h6">English</Heading>
+          <p>C1</p>
+        </div>
+        <div class="space-content">
+          <Heading level="h3" size="h6">German</Heading>
+          <p>B2</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section class="my-16">
+    <div class="container">
+      <Heading level="h2">Experience</Heading>
+      <div class="mt-8 space-content" style="max-width: 65ch;">
+        <div>
+          <Heading level="h3" size="h5">Backend Developer (Trainee)</Heading>
+          <p class="text-sm">Codial IT Academy · 2024 – 2025</p>
+          <ul class="mt-4 flex flex-col gap-2">
+            <li>Assisted in development of more than 15 web applications using Django and DRF</li>
+            <li>Collaborated with senior developers to understand project requirements and implement solutions</li>
+            <li>Participated in code reviews and contributed to debugging and testing processes</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Internships -->
+  <section class="my-16">
+    <div class="container">
+      <Heading level="h2">Internships</Heading>
+      <div class="mt-8 space-content" style="max-width: 65ch;">
+        <div>
+          <Heading level="h3" size="h5">Rolling Scopes JS Short Track Cohort</Heading>
+          <p class="text-sm">JavaScript development program</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section class="my-16">
+    <div class="container">
+      <Heading level="h2">Education</Heading>
+      <div class="mt-8 space-content" style="max-width: 65ch;">
+        <div>
+          <Heading level="h3" size="h5">ITpark University</Heading>
+          <p class="text-sm">2024 – 2028</p>
+          <p class="mt-2">Major: Computer Science</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</DefaultLayout>
